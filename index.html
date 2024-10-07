@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Webpage</title>
+    <style>
+        /* Reset padding and margin */
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: blue;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Typography for paragraph */
+        p {
+            color: white;
+            font-size: 1.2rem;
+            margin: 16px 0;
+        }
+
+        /* Container styling */
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            height: 100dvh;
+            padding: 24px;
+            box-sizing: border-box;
+        }
+
+        /* Scrollable text container */
+        .text-container {
+            flex: 1; /* Allows the text container to take available space */
+            overflow-y: auto;
+        }
+
+        /* Button styling */
+        .button-container {
+            text-align: center;
+            padding-top: 16px;
+        }
+
+        .button-container a {
+            color: white;
+            padding: 12px 24px;
+            background-color: black;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            max-width: 200px;
+            width: 100%;
+        }
+
+        /* Hover effect for button */
+        .button-container a:hover {
+            background-color: #333;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            p {
+                font-size: 1rem;
+            }
+
+            .button-container a {
+                width: 80%;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container" role="main">
+        <div class="text-container">
+            <p>Input zoom testing IOS</p>
+            <input style="font-size: 24px;" placeholder="24px input"><br>
+            <input style="font-size: 12px; margin-top: 32px;" placeholder="12px input">
+        </div>
+        <div class="button-container">
+            <a href="#" aria-label="Click to take action">Button</a>
+        </div>
+    </main>
+</body>
+</html>
